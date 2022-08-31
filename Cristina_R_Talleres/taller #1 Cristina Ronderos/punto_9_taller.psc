@@ -1,0 +1,30 @@
+Algoritmo punto_9_taller
+	definir m, d, vf Como real;
+	definir n como caracter;
+	escribir 'inserte a continuación su nombre, y monto de la compra';
+	leer n, m;
+	si m<50.000 Entonces;
+		d<-0;
+		vf<-m;
+	sino; 
+		si m<100.000 Entonces;
+			d<-m*0.5;
+			vf<-m-d;
+		sino;
+			si m<700.000 Entonces;
+				d<-m*0.11;
+				vf<-m+d;
+			sino;
+				si m<1500000 entonces;
+					d<-m*0.18;
+					vf<-m+d;
+				sino;
+					d<-m*0.25;
+					vf=m+d;
+				FinSi;
+			FinSi;
+		FinSi;
+	FinSi;
+	escribir 'la información de la compra es:';
+	escribir 'cliente: ',n, ' monto de la compra: ', m, ' monto a pagar: ',vf, ' descuento aplicado: ' d;
+FinAlgoritmo
