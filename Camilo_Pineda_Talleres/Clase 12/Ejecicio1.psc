@@ -1,3 +1,0 @@
-Algoritmo ComandoRepetir
-	
-FinAlgoritmo
