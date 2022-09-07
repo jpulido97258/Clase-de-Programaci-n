@@ -1,0 +1,10 @@
+
+
+
+
+A = float(input("Digite un numero"))
+
+B = float(input("Digite un numero"))
+
+respuesta = (A+B)
+print("Su resultado es igual a", respuesta)  
