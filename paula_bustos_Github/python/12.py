@@ -1,13 +1,12 @@
 #Poner contraseña, usario y contraseña correcta
+var = input("Ingrese el usuario: ")
 User = input("Ingrese la contraseña: ")
+usuario = "ruiz"
 contraseña = "profe"
-while True:
-    for i in User:
-        if User == contraseña:
-            print("Esta bien")
-            break
-        elif User != contraseña:
-            print("dwad")
-            break
-        else:
-            User = input("Ingrese la contraseña: ")
+for i in User:
+    if User == contraseña and var == usuario:
+        print("Bienvenido")
+        break
+    else:
+        print("Lo sentimos el acceso sera denegado")
+        break
