@@ -1,0 +1,36 @@
+from dataclasses import dataclass
+
+intentos=0
+intentosM=2
+
+print("Bienvenido al login, crea una cuenta")
+
+user= str(input("Ingresa un usuario: "))
+password= input("Crea una contraseña (Solo son validas contraseñas con numeros) ")
+
+try:
+    entero = int(password)
+    print("Contraseña validad")
+except ValueError:
+    print("contraseña invalida") 
+
+print("Datos guardados, ahora intenta iniciar sesion")
+print("ingresa el ususario")
+user1= str(input())
+print("ingrese la contraseña")
+pass1= int(input())
+
+Datos=[user,password]
+Login=[user1,pass1]
+
+if Datos[0] == Login[0]:
+ print("Los datos coinciden")
+else:
+    print("No coinciden, intente de nuevo")
+    if Datos[1] == Login[1]:
+        print("Los datos coinciden")
+    else:
+        print("No coinciden, intente de nuevo")
+
+
+
