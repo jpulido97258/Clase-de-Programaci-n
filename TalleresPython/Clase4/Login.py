@@ -19,7 +19,7 @@ while loged == False and intentos != 3: #Este while verifica que no esten logead
             inpNombre = input("Escribre tu nombre de usuario: ")
             if nombre == inpNombre:
                 print("El usuario es correcto.")
-                break
+                break #aqui si el usuario es correcto el bucle se rompe.
             print("El usuario es incorrecto")
             intentos = intentos +1
             if intentos == 3: #esta parte hace que si el bucle se repite 3 veces sin exito se "bloquee" la cuenta (se detiene el programa)
@@ -32,8 +32,8 @@ while loged == False and intentos != 3: #Este while verifica que no esten logead
                 if inptContra == contraseña:
                     print("Contraseña correcta")
                     print("Sesion iniciada")
-                    loged = True 
-                    break
+                    loged = True    
+                    break # aqui si la contraseña es correcta se rompe el bucle for
                 print("Contraseña incorrecta")
                 intentos = intentos +1
                 if intentos == 3: #esta parte hace que si el bucle se repite 3 veces sin exito se "bloquee" la cuenta (se detiene el programa)
