@@ -11,7 +11,7 @@ criptomoneda=("BITCOIN, ETHERUM")
 print(criptomoneda)
 print(monedas)
 try:
-    moneda=monedas[(monedas.index(input().upper()))] #Corregir error 
+    moneda=monedas[(monedas.index(input().upper()))] #Error corregido
 except:
     print("el valor que pusiste no coincide con los aceptados")
 print(moneda)
@@ -22,8 +22,8 @@ if moneda == "DOLAR":
     monedanueva1= monedas[(monedas.index(input("¿A que moneda desea convertir?:")))]
     if monedanueva1 == "EURO":
         monedaconvertida= monto1*1
-        print(monto1, "Estos dolares equivalen a:", monedaconvertida, "Euros")
-elif moneda == "EURO":
+        print(monto1, "Estos dolares equivalen a:", monedaconvertida, "Euros") #Error corrregido
+elif moneda == "EURO":  #Corregir codigo 
     print("Su moneda es: ", moneda)
     input("Que la cantidad de dinero que requieres convertir")
     monto2=int(input())
