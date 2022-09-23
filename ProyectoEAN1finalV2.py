@@ -161,7 +161,7 @@ elif moneda == "BITCOIN":      #BITCOIN-DOLAR
             print(monto1, "Estos" ,moneda, "equivalen a:", A , monedanueva1)
         convert_to_bitcoin(monto1, "USD")
     else:
-        print("Elija bien jajaa")
+        print("Digite una moneda existente y habilitada en el conversor", "DOLAR","EURO", "Estas son las disponiblesa conversion con BITCOIN")
 else: 
     print("Digite una moneda existente en y habilitada en el conversor", monedas, "Estas son las disponibles a conversion")
 
